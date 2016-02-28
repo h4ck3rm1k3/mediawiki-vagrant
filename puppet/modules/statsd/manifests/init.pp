@@ -66,7 +66,7 @@ class statsd (
     service { 'statsd':
         ensure   => running,
         enable   => true,
-        provider => 'upstart',
+#        provider => 'upstart',
         require  => [
             Git::Clone['statsd'],
             Npm::Install[$dir],

@@ -51,7 +51,7 @@ class activemq(
     service { 'activemq':
         ensure    => running,
         enable    => true,
-        provider  => 'upstart',
+#        provider  => 'upstart',
         require   => [
             Package['default-jre-headless'],
             Tarball[$pkgname],

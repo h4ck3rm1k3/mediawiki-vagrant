@@ -103,7 +103,7 @@ class contenttranslation::cxserver(
 
     service { 'cxserver':
         ensure    => running,
-        provider  => 'upstart',
+	#        provider  => 'upstart',
         subscribe => [
             File['/etc/init/cxserver.conf'],
             File["${dir}/src/config.js"],

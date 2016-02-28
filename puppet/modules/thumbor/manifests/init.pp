@@ -129,7 +129,7 @@ class thumbor (
     service { 'thumbor':
         ensure    => running,
         enable    => true,
-        provider  => 'upstart',
+#        provider  => 'upstart',
         require   => [
             Virtualenv::Environment[$deploy_dir],
             User['thumbor'],

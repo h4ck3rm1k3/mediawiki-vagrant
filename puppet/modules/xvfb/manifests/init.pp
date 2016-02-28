@@ -49,7 +49,7 @@ class xvfb(
     service { 'xvfb':
         ensure   => running,
         enable   => true,
-        provider => 'upstart',
+#        provider => 'upstart',
         require  => File['/etc/init/xvfb.conf'],
     }
 }

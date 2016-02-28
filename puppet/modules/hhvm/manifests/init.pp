@@ -54,11 +54,11 @@ class hhvm (
 
     package { [
         'hhvm',
-        'hhvm-dev',
-        'hhvm-fss',
-        'hhvm-luasandbox',
-        'hhvm-tidy',
-        'hhvm-wikidiff2',
+#        'hhvm-dev',
+#        'hhvm-fss',
+#        'hhvm-luasandbox',
+#        'hhvm-tidy',
+#        'hhvm-wikidiff2',
     ]:
         ensure => latest,
         notify => Service['hhvm'],
@@ -149,7 +149,7 @@ class hhvm (
     service { 'hhvm':
         ensure   => running,
         enable   => true,
-        provider => upstart,
+#        provider => upstart,
         require  => File['/etc/init/hhvm.conf'],
     }
 

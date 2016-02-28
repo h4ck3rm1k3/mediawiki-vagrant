@@ -15,5 +15,5 @@
 # For more information, see the Puppet manual:
 # <http://docs.puppetlabs.com/references/latest/configuration.html#configversion>
 #
-HEAD="$(git --git-dir="/vagrant/.git" rev-parse --short HEAD 2>/dev/null)"
+HEAD="$(git --git-dir="~/vagrant/.git" rev-parse --short HEAD 2>/dev/null)"
 echo "$(date -u +%s).${HEAD:-no-git}"

@@ -52,7 +52,7 @@ class misc {
 
     # Initialize PHPStorm environment from common template
     file { '/vagrant/.idea':
-        source  => '/vagrant/support/idea-dist',
+        source  => '/home/jamesmikedupont/vagrant/support/idea-dist',
         recurse => true,
         replace => false,
     }

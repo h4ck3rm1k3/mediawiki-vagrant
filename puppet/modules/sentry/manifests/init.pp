@@ -169,7 +169,7 @@ class sentry (
     service { 'sentry-server':
         ensure    => running,
         enable    => true,
-        provider  => 'upstart',
+#        provider  => 'upstart',
         require   => [
             Virtualenv::Environment[$deploy_dir],
             Mysql::User[$db_user],
@@ -183,7 +183,7 @@ class sentry (
     service { 'sentry-worker':
         ensure    => running,
         enable    => true,
-        provider  => 'upstart',
+ #       provider  => 'upstart',
         require   => [
             Virtualenv::Environment[$deploy_dir],
             Mysql::User[$db_user],

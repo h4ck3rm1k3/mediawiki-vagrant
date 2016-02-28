@@ -106,7 +106,7 @@ class trafficserver (
     service { 'trafficserver':
         ensure    => running,
         enable    => true,
-        provider  => 'upstart',
+#        provider  => 'upstart',
         require   => [
             File["${deploy_dir}/bin/traffic_server"],
             File['/etc/init/trafficserver.conf'],

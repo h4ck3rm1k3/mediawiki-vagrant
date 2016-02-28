@@ -106,14 +106,14 @@ class mediawiki::jobrunner(
     service { 'jobrunner':
         ensure   => $ensure,
         enable   => $enable,
-        provider => 'upstart',
+#        provider => 'upstart',
         require  => Mediawiki::Wiki[$::mediawiki::wiki_name],
     }
 
     service { 'jobchron':
         ensure   => $ensure,
         enable   => $enable,
-        provider => 'upstart',
+#        provider => 'upstart',
         require  => Mediawiki::Wiki[$::mediawiki::wiki_name],
     }
 }

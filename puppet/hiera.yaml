@@ -2,7 +2,7 @@
 :backends:
   - yaml
 :yaml:
-  :datadir: /vagrant/puppet/hieradata
+  :datadir: ./puppet/hieradata
 :hierarchy:
   - local
   - vagrant-managed

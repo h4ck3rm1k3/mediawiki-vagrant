@@ -56,7 +56,7 @@ class graphoid(
         enable     => true,
         hasstatus  => true,
         hasrestart => true,
-        provider   => 'upstart',
+#        provider   => 'upstart',
         subscribe  => File['/etc/init/graphoid.conf'],
     }
 }

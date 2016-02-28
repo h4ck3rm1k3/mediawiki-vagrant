@@ -21,7 +21,7 @@ class cgroup {
     service { 'cgrulesengd':
         ensure    => running,
         enable    => true,
-        provider  => 'upstart',
+#        provider  => 'upstart',
         require   => Package['cgroup-bin'],
         subscribe => File['/etc/init/cgrulesengd.conf']
     }

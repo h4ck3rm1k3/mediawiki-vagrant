@@ -16,7 +16,7 @@ class apache (
 
     include apache::mod::php5
     include apache::mod::access_compat
-    include apache::mod::version
+    #include apache::mod::version
 
     file { '/etc/apache2/ports.conf':
         content => template('apache/ports.conf.erb'),

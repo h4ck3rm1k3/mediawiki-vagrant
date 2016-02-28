@@ -215,7 +215,7 @@ class varnish {
 
     service { 'varnish':
         ensure    => running,
-        provider  => 'upstart',
+#        provider  => 'upstart',
         require   => [
             Exec[
                 'build_varnish',
